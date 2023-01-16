@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BillboardApp.ApplicationCore\BillboardApp.ApplicationCore.csproj" />
+    <ProjectReference Include="..\BillboardApp.Domain\BillboardApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
