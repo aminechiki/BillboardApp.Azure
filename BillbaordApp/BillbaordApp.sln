@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardApp.Web", "BillboardApp.Web\BillboardApp.Web.csproj", "{609FFA3D-5ECC-4995-9C7B-3BD4040F39F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillboardApp.Web", "BillboardApp.Web\BillboardApp.Web.csproj", "{609FFA3D-5ECC-4995-9C7B-3BD4040F39F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardApp.ApplicationCore", "BillboardApp.ApplicationCore\BillboardApp.ApplicationCore.csproj", "{2A518E84-8D1A-41D1-AB3C-EB37DAAE1A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillboardApp.ApplicationCore", "BillboardApp.ApplicationCore\BillboardApp.ApplicationCore.csproj", "{2A518E84-8D1A-41D1-AB3C-EB37DAAE1A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardApp.Infrastructure", "BillboardApp.Infrastructure\BillboardApp.Infrastructure.csproj", "{4C30BBCD-B308-43B9-967B-6901B1F1DB90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillboardApp.Infrastructure", "BillboardApp.Infrastructure\BillboardApp.Infrastructure.csproj", "{4C30BBCD-B308-43B9-967B-6901B1F1DB90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardApp.Domain", "BillboardApp.Domain\BillboardApp.Domain.csproj", "{4575408F-65B2-4F47-94AA-2E9551FE3EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillboardApp.Domain", "BillboardApp.Domain\BillboardApp.Domain.csproj", "{4575408F-65B2-4F47-94AA-2E9551FE3EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillboardApp.Device", "BillboardApp.Device\BillboardApp.Device.csproj", "{939B795C-364A-4220-A2E1-6F00D3A697B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4575408F-65B2-4F47-94AA-2E9551FE3EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4575408F-65B2-4F47-94AA-2E9551FE3EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4575408F-65B2-4F47-94AA-2E9551FE3EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939B795C-364A-4220-A2E1-6F00D3A697B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939B795C-364A-4220-A2E1-6F00D3A697B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939B795C-364A-4220-A2E1-6F00D3A697B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939B795C-364A-4220-A2E1-6F00D3A697B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

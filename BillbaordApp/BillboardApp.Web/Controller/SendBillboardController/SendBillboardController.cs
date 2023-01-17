@@ -1,30 +1,25 @@
-﻿using BillboardApp.ApplicationCore.Interfaces.Services.ConfigurationBillboardServices;
+﻿using BillboardApp.ApplicationCore.Interfaces.Services.SendBillboardServices;
 using BillboardApp.Domain.Entities;
-using BillboardApp.Infrastructure.Services.ConfigurationBillboardServices;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
 
 namespace BillboardApp.Web.Controller.SendBillboardController
 {
-
-        [ApiController]
-        [Route("api/[controller]")]
-        public class SendBillboardController : ControllerBase
+    [ApiController]
+    [Route("api/message")]
+    public class MessaggeController : ControllerBase
+    {
+        private readonly ILogger<MessaggeController> _logger;
+        private readonly ISendBillboardServices _sendBillboardServices1;
+        public MessaggeController(ILogger<MessaggeController> logger, ISendBillboardServices sendBillboardServices)
         {
-            private readonly ILogger<SendBillboardController> _logger;
-            private readonly IConfigurationBillboardServices _configurationBillboardServices;
-            public SendBillboardController(ILogger<SendBillboardController> logger, IConfigurationBillboardServices configurationBillboardServices)
-            {
-            this._logger = logger;
-            this._configurationBillboardServices = configurationBillboardServices;
-            }
-
-            [HttpPost("{idDevice}")]
-
-            public Task SetConfigurationBillboard([FromRoute] int idDevice, configurationBillboard configuration)
-            {
-                return _configurationBillboardServices.SetConfigurationBillboard(idDevice, configuration);
-            }
+            _logger = logger;
+            _sendBillboardServices1 = sendBillboardServices;
         }
-    
+
+        [HttpPost("{idDevice}")]
+        public Task SendText(int idDevice, Billboard billboard)
+        {
+            return this._sendBillboardServices1.SendBillboard(idDevice, billboard);
+        }
+    }
 }
